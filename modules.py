@@ -102,13 +102,6 @@ print(f"time is {b.tm_hour}:{b.tm_min}:{b.tm_sec}")
 
 print(f"day is {b.tm_yday}-{b.tm_wday}-{b.tm_isdst}")'''
 
-#task
-'''import random
-import time
-for i in range(10):
-    a=random.randint(20,50)
-    print(a)
-    time.sleep(2)'''
 
 
 #error handling
@@ -149,5 +142,29 @@ if a<5:
         print("no exceptions")
     finally:
         print("program ends......")'''
+
+#task
+#dice code
+'''import random
+while True:
+    input("enter the roll of dice")
+    a=random.randint(1,6)
+    print(a)
+    option=input("roll again?(y/n)")
+    if option=="y":
+        continue
+    elif option=="n":
+        break
+    else:
+        print("invalid option")'''
+
+#task
+'''import random
+import time
+for i in range(10):
+    a=random.randint(20,50)
+    print(a)
+    time.sleep(2)'''
+
 
 
