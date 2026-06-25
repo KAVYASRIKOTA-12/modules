@@ -20,7 +20,7 @@ if __name__=="__main__":
     a.extend("code")
     print(a)
 
-ex 5
+#ex 5
 def dummy():
     if __name__=="__main__":
         print("this program is run as script")
