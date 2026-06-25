@@ -1,5 +1,5 @@
 #math module
-'''import math
+import math
 print(math.pi)
 print(math.pi*3)
 print(math.sqrt(2))
@@ -11,85 +11,91 @@ print(math.tan(45))
 print(math.ceil(6.9))
 print(math.ceil(0.5))
 print(math.floor(4.9))
-print(math.factorial(12))'''
+print(math.factorial(12))
 
-'''from math import pi,sqrt,log
+3example
+from math import pi,sqrt,log
 print(pi)
 print(sqrt(4))
-print(log(20))'''
+print(log(20))
 
 
 #sys module
-'''import sys
-print(sys.path)'''
+#ex 1
+import sys
+print(sys.path)
 
-
-'''import sys
+#ex 2
+import sys
 for i in sys.path:  #to print in different lines
-    print(i)'''
+    print(i)
 
-'''import sys
-print(sys.version)'''
+#ex 3
+import sys
+print(sys.version)
 
 
 #os module
-'''import os
+import os
 print(os.path)
 print(os.getcwd())
-#print(os.listdir())
-#print(os.mkdir("may25"))
+print(os.listdir())
+print(os.mkdir("may25"))
 print(os.chdir("C:\\Users\\Kavya\\Downloads"))
-print(os.listdir())'''
+print(os.listdir())
 
 
 #random module
 #To generate the random number in python , randinit function is used this function is defined in random module.
 #Python defines a set of functions that are used to generate or manipulate random numbers through the module.
-'''import random
+import random
 a=random.sample(range(10,40),5)
-print(a)'''
+print(a)
 #randint()
-'''import random
+import random
 a=random.randint(20,50) #to print single number
-print(a)'''
+print(a)
 #choice()
-'''import random
+import random
 a=[10,20,30,40,50]
 b=random.choice(a)  #to print assigned numbers
-print(b)'''
+print(b)
 
 
 #task
-'''import random
+import random
 a=int(input("enter the roll of dice"))
-b=random.randint(1,7)'''
+b=random.randint(1,7)
 
 #calendar module
-'''import calendar
+#ex 1
+import calendar
 year=2026
 month=6
-print(calendar.month(year,month))'''
+print(calendar.month(year,month))
 
-'''import calendar
+#ex 2
+import calendar
 year=2026
-print(calendar.calendar(year))'''
+print(calendar.calendar(year))
 
-'''import calendar
+#ex 3
+import calendar
 year=int(input("year"))
 month=int(input("month"))
-print(calendar.month(year,month))'''
+print(calendar.month(year,month))
 
 #date & time
-'''from datetime import date
+from datetime import date
 a=date.today()
-print(a)'''
+print(a)
 
-'''import datetime
+import datetime
 a=datetime.datetime.now()
-print(a)'''
+print(a)
 
 #time
-'''import time
+import time
 a=time.time()
 print(a)      #epoch time
 
@@ -100,7 +106,7 @@ print(f"today date is {b.tm_mday}-{b.tm_mon}-{b.tm_year}")
 
 print(f"time is {b.tm_hour}:{b.tm_min}:{b.tm_sec}")
 
-print(f"day is {b.tm_yday}-{b.tm_wday}-{b.tm_isdst}")'''
+print(f"day is {b.tm_yday}-{b.tm_wday}-{b.tm_isdst}")
 
 
 
@@ -110,18 +116,18 @@ print(f"day is {b.tm_yday}-{b.tm_wday}-{b.tm_isdst}")'''
 #3.logical error->error in logic(it cant visible)
 
 #syntax error
-'''for i in range(10):
-print(a)'''
+for i in range(10):
+print(a)
 
 #runtime error
-'''a=int(input("a value"))
+a=int(input("a value"))
 b=int(input("b value"))
-print(a/b)'''
+print(a/b)
 
 #logical error
-'''a=10
+a=10
 if a<5:
-    print("true")'''
+    print("true")
 
 
 
@@ -130,7 +136,7 @@ if a<5:
 #2.except->exception is raised in try block.It will be handle by this block.
 #3.error->optional(no exceptions).
 #4.finally->(always).
-'''while True:
+while True:
     try:
         a=int(input("a value"))
         b=int(input("b value"))
@@ -141,11 +147,11 @@ if a<5:
     else:
         print("no exceptions")
     finally:
-        print("program ends......")'''
+        print("program ends......")
 
 #task
 #dice code
-'''import random
+import random
 while True:
     input("enter the roll of dice")
     a=random.randint(1,6)
@@ -156,15 +162,15 @@ while True:
     elif option=="n":
         break
     else:
-        print("invalid option")'''
+        print("invalid option")
 
 #task
-'''import random
+import random
 import time
 for i in range(10):
     a=random.randint(20,50)
     print(a)
-    time.sleep(2)'''
+    time.sleep(2)
 
 
 
