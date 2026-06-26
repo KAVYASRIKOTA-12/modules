@@ -172,5 +172,69 @@ for i in range(10):
     print(a)
     time.sleep(2)
 
+#regex methods->compile(),search(),findall(),split(),sub()
+#sequence characters:
+#\w->it matches alphanumeric
+#\W->it matches non-alphanumeric
+#\d->it matches any digit
+#\D->it matches non-digit
+#\s->it represents white spaces
+#\S->it represents non-white spaces
+
+#compile()
+import re
+a="code map maths cash money cup monkey cap mug"
+b=re.compile(r"m\w\w\w\w")
+print(b)
+
+#search()
+c=b.search(a)
+print(c)
+
+#to print a single word that starts with m letter
+import re
+a="code map maths cash money cup monkey cap mug"
+c=re.search(r"m\w+",a)
+print(c)   
+
+
+#findall()
+#to print all m letter words
+import re
+a="code map maths cash money cup monkey cap mug"
+d=re.findall(r"m\w+",a)
+print(d)   
+
+#to print all c letter words
+import re
+a="code map maths cash money cup monkey cap mug"
+d=re.findall(r"c\w+",a)
+print(d)
+
+
+#split()
+ #to split m from m letter words
+import re
+a="code map maths cash money cup monkey cap mug"
+b=re.split(r"m",a)  
+print(b)
+#to remove white spaces
+c=re.split(r"\s",a)  
+print(c)
+
+#sub()
+#ex 1
+import re
+a="code map maths cash money cup monkey cap mug"
+b=re.sub(r"m","k",a)
+print(b)
+
+#ex 2
+#to print all digits in given data 
+import re
+a="python java 23 87 money 98 cake 53"
+b=re.findall(r"\d+",a)   
+print(b)
+
 
 
