@@ -236,5 +236,73 @@ a="python java 23 87 money 98 cake 53"
 b=re.findall(r"\d+",a)   
 print(b)
 
+#file handling
+#methods->write(),append(),readlines(),writelines()
+#write()
+#ex 1
+a=open("kavya.txt","w")
+a.write("codegnan")
+a.close()
+
+#ex 2
+a=open("kavya.txt","w")
+a.write("data")  #it will override the previous data.
+a.close()
+
+#append()
+#add data to previous data
+a=open("kavya.txt","a")
+a.write("\tcourse") 
+a.close()
+
+#ex 1(in runtime)
+a=open("kavya.txt","w")
+a.write(input("data"))
+a.close()
+
+#ex 2(in runtime)
+a=open("kavya.txt","w")
+b=input("data")
+a.write(b)
+a.close()
+
+#readlines()
+#it will display entire content
+a=open("kavya.txt")
+print(a.read())
+
+#it will display first line
+a=open("kavya.txt")
+print(a.readline())
+
+#it will display with \n
+a=open("kavya.txt")
+print(a.readlines())
+
+#it will display no.of characters
+a=open("kavya.txt")
+print(a.read(6))
+
+
+#writelines()->it makes every obj side by side
+a=open("harika.txt","w")
+b=["saanvi","monali","kavya","bhanu","rekha"]
+a.writelines(b)
+a.close()
+
+#it will display in newline
+a=open("harika.txt","w")
+b=["saanvi","monali","kavya","bhanu","rekha"]
+a.writelines("\n".join(b))
+a.close()
+
+#accessing files
+#with path
+a=open("C:\\Users\\Kavya\\OneDrive\\Desktop\\PFS\\sets methods.py")
+print(a.read())
+
+#without path
+a=open("indexing.py")
+print(a.read())
 
 
